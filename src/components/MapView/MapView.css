@@ -1,0 +1,21 @@
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.wp-marker {
+  width: 30px;
+  height: 40px;
+  background: #5f6368;
+  clip-path: path('M15 0C6.7 0 0 6.7 0 15c0 11 15 25 15 25s15-14 15-25C30 6.7 23.3 0 15 0z');
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+  color: #fff;
+  font: 700 13px/16px system-ui, sans-serif;
+}
+
+.wp-marker--dest {
+  background: #ea4335;
+}

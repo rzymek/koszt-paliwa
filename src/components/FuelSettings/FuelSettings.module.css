@@ -1,0 +1,86 @@
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.pills {
+  display: flex;
+  gap: 6px;
+}
+
+.pills button {
+  flex: 1;
+  padding: 7px 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pills button:hover {
+  background: var(--hover);
+}
+
+.pills .selected,
+.pills .selected:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  text-align: right;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.unit {
+  min-width: 64px;
+}
+
+.source {
+  margin: -4px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+  min-height: 1em;
+}
+
+.source a,
+.reset {
+  color: var(--accent);
+}
+
+.reset {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--danger);
+}

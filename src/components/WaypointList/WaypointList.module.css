@@ -1,0 +1,97 @@
+.wrap {
+  position: relative;
+}
+
+.list {
+  margin: 0;
+  padding: 0 36px 0 0;
+  list-style: none;
+  position: relative;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+/* dotted connector between badges */
+.row:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: calc(50% + 12px);
+  height: calc(100% - 20px);
+  border-left: 2px dotted var(--muted);
+}
+
+.badge {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  border: 2px solid var(--muted);
+  background: var(--surface);
+}
+
+.dest {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  margin-right: -36px;
+}
+
+.icon:hover,
+.swap:hover {
+  background: var(--hover);
+}
+
+.swap {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.add {
+  margin: 6px 0 0 32px;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.add:hover {
+  background: var(--hover);
+}
